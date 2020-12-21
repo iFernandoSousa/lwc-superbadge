@@ -25,7 +25,7 @@ export default class BoatReviews extends NavigationMixin(LightningElement) {
 
     // Getter to determine if there are reviews to display
     get reviewsToShow() {
-        return !!this.boatReviews;
+        return this.boatReviews && this.boatReviews.length;
     }
 
     // Public method to force a refresh of the reviews invoking getReviews
